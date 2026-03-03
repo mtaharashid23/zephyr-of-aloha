@@ -461,6 +461,20 @@ html.lenis body {
 .banner_card_content p {
 	margin: 0;
 	color: var(--black);
+	height: 120px;
+	overflow-y: auto;
+}
+
+.banner_card_content p::-webkit-scrollbar {
+	width: 8px;
+}
+
+.banner_card_content p::-webkit-scrollbar-thumb {
+	background: var(--primary);
+}
+
+.banner_card_content p::-webkit-scrollbar-track {
+	background: #f1f1f1;
 }
 
 /* about-section */
