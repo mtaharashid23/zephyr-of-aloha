@@ -12,26 +12,25 @@
 	--black: #1f1f1f;
 
 	/* Tropical Pink (Background Inspired) */
-	--primary: #D87A9A;        /* soft dusty pink */
+	--primary: #D87A9A;
+	/* soft dusty pink */
 
 	/* Palm Leaf Green */
-	--secondary: #2F5D3A;      /* deep tropical green */
+	--secondary: #2F5D3A;
+	/* deep tropical green */
 
 	/* Light Leaf Accent */
-	--accent: #6FA36B;         /* soft green highlight */
+	--accent: #6FA36B;
+	/* soft green highlight */
 
 	/* Gradients */
-	--gradient-primary: linear-gradient(
-		180deg,
-		#D87A9A 0%,
-		#2F5D3A 100%
-	);
+	--gradient-primary: linear-gradient(180deg,
+			#D87A9A 0%,
+			#2F5D3A 100%);
 
-	--gradient-secondary: linear-gradient(
-		180deg,
-		#6FA36B 0%,
-		#D87A9A 100%
-	);
+	--gradient-secondary: linear-gradient(180deg,
+			#6FA36B 0%,
+			#D87A9A 100%);
 
 	--font-poppins: "Poppins", sans-serif;
 	--font-jost: "Jost", sans-serif;
@@ -382,11 +381,12 @@ html.lenis body {
 	position: absolute;
 	inset: 0;
 	background-color: transparent;
-	background-image: linear-gradient(
-  180deg,
-  rgba(216, 122, 154, 0.75) 0%,   /* dusty pink overlay */
-  rgba(47, 93, 58, 0.80) 100%      /* deep palm green */
- );
+	background-image: linear-gradient(180deg,
+			rgba(216, 122, 154, 0.75) 0%,
+			/* dusty pink overlay */
+			rgba(47, 93, 58, 0.80) 100%
+			/* deep palm green */
+		);
 	user-select: none;
 }
 
@@ -508,11 +508,9 @@ html.lenis body {
 	content: "";
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(
-		180deg,
-		rgba(47,127,143,0.6),
-		rgba(197,90,43,0.6)
-	);	
+	background: linear-gradient(180deg,
+			rgba(47, 127, 143, 0.6),
+			rgba(197, 90, 43, 0.6));
 }
 
 .review_card {
@@ -900,4 +898,25 @@ html.lenis body {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.from-the-author .blog_card_img img {
+	object-position: 50% 20%;
+	aspect-ratio: 16/9;
+}
+
+.from-the-author .blog_card_content h4 {
+	margin-bottom: 0;
+}
+
+.from-the-author .blog_card_content h3 {
+	color: var(--primary);
+	font-size: 2rem;
+	text-transform: capitalize;
+	margin-bottom: 0;
+}
+
+.from-the-author .blog_card_content p strong {
+	font-style: italic;
+	font-weight: 500;
 }
