@@ -920,3 +920,8 @@ html.lenis body {
 	font-style: italic;
 	font-weight: 500;
 }
+
+.shop-btn,
+.footer_social {
+	display: none !important;
+}

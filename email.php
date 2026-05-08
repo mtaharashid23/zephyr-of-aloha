@@ -18,7 +18,7 @@
     $message .= 'Phone Number: '.$phone."\r\n";
     $message .= 'Message: '.$msg."\r\n";
     // Set your email address where you want to receive emails . 
-    $to = 'info@gmail.com';
+    $to = 'hotchkissperry@gmail.com';
     $subject = 'Contact Request From Website';
     $send_email = mail($to,$subject,$message);  
     echo ($send_email) ? 'success' : 'error';
@@ -27,7 +27,7 @@
     $email = $_POST['email'];
     $message = 'Email: '.$email."\r\n";
     // Set your email address where you want to receive emails . 
-    $to = 'info@gmail.com';
+    $to = 'hotchkissperry@gmail.com';
     $subject = 'Subscribe to our Newsletters for Latest Updates!';
     $send_email = mail($to,$subject,$message);
     echo ($send_email) ? 'success' : 'error';
