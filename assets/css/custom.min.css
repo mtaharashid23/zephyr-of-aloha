@@ -815,6 +815,11 @@ html.lenis body {
 	font-size: 1.2em;
 	font-family: var(--font-poppins);
 	font-weight: bold;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .blog_card_content p {
@@ -877,6 +882,7 @@ html.lenis body {
 .blog-detail-section .blog_card_content h4 {
 	font-size: 1.5em;
 	font-weight: bold;
+	display: block;
 }
 
 .blog-detail-section .blog_card_content p {
@@ -924,4 +930,88 @@ html.lenis body {
 .shop-btn,
 .footer_social {
 	display: none !important;
+}
+
+/* ===== SWIPER NAVIGATION ===== */
+.reviewSlider {
+    padding-bottom: 80px;
+    position: relative;
+    overflow: unset;
+}
+
+.reviewSlider .swiper-button-next,
+.reviewSlider .swiper-button-prev {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 2px solid var(--primary);
+    color: var(--secondary);
+    transition: all 0.35s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-top: -3.75rem;
+}
+
+.reviewSlider .swiper-button-next::after,
+.reviewSlider .swiper-button-prev::after {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.reviewSlider .swiper-button-next:hover,
+.reviewSlider .swiper-button-prev:hover {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(216, 122, 154, 0.35);
+}
+
+/* Position */
+.reviewSlider .swiper-button-prev {
+    left: -25px;
+}
+
+.reviewSlider .swiper-button-next {
+    right: -25px;
+}
+
+
+/* ===== PAGINATION ===== */
+.reviewSlider .swiper-pagination {
+    bottom: 10px !important;
+}
+
+.reviewSlider .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: rgba(47, 93, 58, 0.25);
+    opacity: 1;
+    transition: all 0.3s ease;
+    margin: 0 6px !important;
+}
+
+.reviewSlider .swiper-pagination-bullet-active {
+    width: 35px;
+    border-radius: 20px;
+    background: var(--primary);
+    box-shadow: 0 0 12px rgba(216, 122, 154, 0.4);
+}
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 991px) {
+    .reviewSlider .swiper-button-next,
+    .reviewSlider .swiper-button-prev {
+        width: 45px;
+        height: 45px;
+    }
+
+    .reviewSlider .swiper-button-prev {
+        left: 0;
+    }
+
+    .reviewSlider .swiper-button-next {
+        right: 0;
+    }
 }
